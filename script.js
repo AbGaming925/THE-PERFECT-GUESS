@@ -22,7 +22,8 @@ function checkGuess() {
     } else {
         messageElement.textContent = `Congratulations! You guessed the number ${computer} in ${attempts} attempts!`;
         attemptsElement.textContent = ''
-        attempts = 0;
+        attempts = 0
+        computer = Math.floor(Math.random() * 50) + 1;
     }
 
     attemptsElement.textContent = `Attempts: ${attempts}`;
